@@ -925,11 +925,9 @@ button {
     .divisions-info-grid {
         grid-template-columns: 1fr;
     }
-    
-    .facet-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: var(--spacing-sm);
+
+    .info-facet[data-expanded="true"] .facet-expandable-content {
+        max-height: 3000px;
     }
 }
 
@@ -972,21 +970,27 @@ button {
 }
 
 .info-facet[data-expanded="true"] .facet-expandable-content {
-    max-height: 1000px;
+    max-height: 2000px;
     opacity: 1;
     margin-top: var(--spacing-md);
 }
 
-/* Service card when nested inside info-facet */
-.info-facet .service-card {
-    margin: 0;
+/* Service cards stack vertically within each facet */
+.facet-expandable-content .service-card {
+    width: 100%;
+    margin: 0 0 var(--spacing-md) 0;
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.info-facet .service-card:hover {
-    transform: none;
+.facet-expandable-content .service-card:last-child {
+    margin-bottom: 0;
+}
+
+.facet-expandable-content .service-card:hover {
+    transform: translateY(-3px);
     border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 6px 20px rgba(0, 102, 204, 0.2);
 }
 
 /* ===================================
