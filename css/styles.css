@@ -821,8 +821,8 @@ button {
 }
 
 .divisions-info-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: var(--spacing-lg);
 }
 
@@ -922,10 +922,6 @@ button {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .divisions-info-grid {
-        grid-template-columns: 1fr;
-    }
-
     .info-facet[data-expanded="true"] .facet-expandable-content {
         max-height: 3000px;
     }
