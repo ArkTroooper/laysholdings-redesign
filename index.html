@@ -183,12 +183,15 @@
             <!-- NEW: Three Facets Information Section -->
             <div class="divisions-info">
                 <div class="divisions-info-grid">
-                    <div class="info-facet">
+                    <div class="info-facet" data-expanded="false">
                         <div class="facet-header">
                             <div class="facet-icon-wrapper">
                                 <i class="fas fa-project-diagram"></i>
                             </div>
                             <h3>Project Management Excellence</h3>
+                            <button class="facet-expand-btn" aria-label="Expand Project Management services">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
                         </div>
                         <p class="facet-description">
                             Our project management division delivers comprehensive solutions from inception to completion. We specialize in strategic planning, resource optimization, and risk management across diverse industries. With proven methodologies and experienced teams, we ensure timely delivery and quality outcomes for projects of all scales.
@@ -197,14 +200,33 @@
                             <span class="highlight-badge"><i class="fas fa-check-circle"></i> 500+ Projects Delivered</span>
                             <span class="highlight-badge"><i class="fas fa-check-circle"></i> Multi-Industry Expertise</span>
                         </div>
+                        <div class="facet-expandable-content">
+                            <div class="service-card">
+                                <div class="service-icon service-icon-project">
+                                    <i class="fas fa-project-diagram"></i>
+                                </div>
+                                <h3>Project Management Services</h3>
+                                <p>Professional project management solutions from planning to execution. We deliver excellence in managing complex projects across diverse industries with proven methodologies and expert teams.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check"></i> Strategic project planning & execution</li>
+                                    <li><i class="fas fa-check"></i> Risk assessment & mitigation</li>
+                                    <li><i class="fas fa-check"></i> Quality assurance & delivery</li>
+                                    <li><i class="fas fa-check"></i> Resource optimization</li>
+                                </ul>
+                                <a href="#contact" class="service-link">Get Started <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="info-facet">
+                    <div class="info-facet" data-expanded="false">
                         <div class="facet-header">
                             <div class="facet-icon-wrapper">
                                 <i class="fas fa-exchange-alt"></i>
                             </div>
                             <h3>Global Commodity Trading</h3>
+                            <button class="facet-expand-btn" aria-label="Expand Commodity Trading services">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
                         </div>
                         <p class="facet-description">
                             Our trading division operates across international markets, providing comprehensive commodity sourcing and trading services. We leverage deep market intelligence, strategic partnerships, and robust supply chain networks to deliver value across multiple commodity sectors with competitive pricing and reliable delivery.
@@ -213,14 +235,33 @@
                             <span class="highlight-badge"><i class="fas fa-check-circle"></i> Global Network</span>
                             <span class="highlight-badge"><i class="fas fa-check-circle"></i> Market Intelligence</span>
                         </div>
+                        <div class="facet-expandable-content">
+                            <div class="service-card">
+                                <div class="service-icon service-icon-trading">
+                                    <i class="fas fa-exchange-alt"></i>
+                                </div>
+                                <h3>Commodity Trading Services</h3>
+                                <p>Global commodity trading operations with expertise in sourcing, logistics, and market intelligence. We provide comprehensive trading solutions across multiple commodity sectors worldwide.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check"></i> Global commodity sourcing & trading</li>
+                                    <li><i class="fas fa-check"></i> Market analysis & intelligence</li>
+                                    <li><i class="fas fa-check"></i> Supply chain management</li>
+                                    <li><i class="fas fa-check"></i> Logistics coordination</li>
+                                </ul>
+                                <a href="#contact" class="service-link">Get Started <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="info-facet">
+                    <div class="info-facet" data-expanded="false">
                         <div class="facet-header">
                             <div class="facet-icon-wrapper">
                                 <i class="fas fa-bolt"></i>
                             </div>
                             <h3>Energy Project Development</h3>
+                            <button class="facet-expand-btn" aria-label="Expand Energy Projects services">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
                         </div>
                         <p class="facet-description">
                             Our energy division focuses on developing sustainable and conventional energy projects from feasibility to commissioning. We bring expertise in renewable energy solutions, infrastructure development, and innovative technologies to meet evolving energy demands while maintaining environmental responsibility and economic viability.
@@ -229,59 +270,27 @@
                             <span class="highlight-badge"><i class="fas fa-check-circle"></i> Renewable Focus</span>
                             <span class="highlight-badge"><i class="fas fa-check-circle"></i> Sustainable Solutions</span>
                         </div>
+                        <div class="facet-expandable-content">
+                            <div class="service-card">
+                                <div class="service-icon service-icon-energy">
+                                    <i class="fas fa-bolt"></i>
+                                </div>
+                                <h3>Energy Projects Services</h3>
+                                <p>Complete energy project development from feasibility studies to commissioning. We specialize in renewable and conventional energy infrastructure with innovative solutions.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check"></i> Energy project development</li>
+                                    <li><i class="fas fa-check"></i> Renewable energy solutions</li>
+                                    <li><i class="fas fa-check"></i> Infrastructure implementation</li>
+                                    <li><i class="fas fa-check"></i> Technical consulting</li>
+                                </ul>
+                                <a href="#contact" class="service-link">Get Started <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="services-grid">
-                <!-- Project Management Services Placeholder -->
-                <div class="service-card">
-                    <div class="service-icon service-icon-project">
-                        <i class="fas fa-project-diagram"></i>
-                    </div>
-                    <h3>Project Management Services</h3>
-                    <p>Professional project management solutions from planning to execution. We deliver excellence in managing complex projects across diverse industries with proven methodologies and expert teams.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Strategic project planning & execution</li>
-                        <li><i class="fas fa-check"></i> Risk assessment & mitigation</li>
-                        <li><i class="fas fa-check"></i> Quality assurance & delivery</li>
-                        <li><i class="fas fa-check"></i> Resource optimization</li>
-                    </ul>
-                    <a href="#contact" class="service-link">Get Started <i class="fas fa-arrow-right"></i></a>
-                </div>
-                
-                <!-- Commodity Trading Services Placeholder -->
-                <div class="service-card">
-                    <div class="service-icon service-icon-trading">
-                        <i class="fas fa-exchange-alt"></i>
-                    </div>
-                    <h3>Commodity Trading Services</h3>
-                    <p>Global commodity trading operations with expertise in sourcing, logistics, and market intelligence. We provide comprehensive trading solutions across multiple commodity sectors worldwide.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Global commodity sourcing & trading</li>
-                        <li><i class="fas fa-check"></i> Market analysis & intelligence</li>
-                        <li><i class="fas fa-check"></i> Supply chain management</li>
-                        <li><i class="fas fa-check"></i> Logistics coordination</li>
-                    </ul>
-                    <a href="#contact" class="service-link">Get Started <i class="fas fa-arrow-right"></i></a>
-                </div>
-                
-                <!-- Energy Projects Services Placeholder -->
-                <div class="service-card">
-                    <div class="service-icon service-icon-energy">
-                        <i class="fas fa-bolt"></i>
-                    </div>
-                    <h3>Energy Projects Services</h3>
-                    <p>Complete energy project development from feasibility studies to commissioning. We specialize in renewable and conventional energy infrastructure with innovative solutions.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Energy project development</li>
-                        <li><i class="fas fa-check"></i> Renewable energy solutions</li>
-                        <li><i class="fas fa-check"></i> Infrastructure implementation</li>
-                        <li><i class="fas fa-check"></i> Technical consulting</li>
-                    </ul>
-                    <a href="#contact" class="service-link">Get Started <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
+
         </div>
     </section>
 

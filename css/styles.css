@@ -832,11 +832,13 @@ button {
     border-radius: var(--radius-lg);
     border-left: 4px solid var(--primary-color);
     transition: var(--transition-normal);
+    cursor: pointer;
+    position: relative;
 }
 
 .info-facet:hover {
     background: rgba(255, 255, 255, 0.08);
-    transform: translateX(5px);
+    transform: translateX(3px);
 }
 
 .info-facet:nth-child(1) {
@@ -855,6 +857,7 @@ button {
     display: flex;
     align-items: center;
     gap: var(--spacing-md);
+    justify-content: space-between;
     margin-bottom: var(--spacing-md);
 }
 
@@ -928,6 +931,62 @@ button {
         align-items: flex-start;
         gap: var(--spacing-sm);
     }
+}
+
+/* ===================================
+   Expandable Facet Styles
+   =================================== */
+.facet-expand-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-light);
+    cursor: pointer;
+    transition: var(--transition-normal);
+    flex-shrink: 0;
+}
+
+.facet-expand-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+.facet-expand-btn i {
+    transition: transform var(--transition-normal);
+}
+
+.info-facet[data-expanded="true"] .facet-expand-btn i {
+    transform: rotate(180deg);
+}
+
+.facet-expandable-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, opacity 0.3s ease-out;
+    opacity: 0;
+}
+
+.info-facet[data-expanded="true"] .facet-expandable-content {
+    max-height: 1000px;
+    opacity: 1;
+    margin-top: var(--spacing-md);
+}
+
+/* Service card when nested inside info-facet */
+.info-facet .service-card {
+    margin: 0;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.info-facet .service-card:hover {
+    transform: none;
+    border-color: rgba(255, 255, 255, 0.2);
 }
 
 /* ===================================
