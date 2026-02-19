@@ -1,20 +1,24 @@
-# Lays Holdings - Professional Energy Solutions Website
+# Lays Holdings - Diversified Holding Company Website
 
-A modern, corporate website redesign for Lays Holdings with a strong emphasis on energy themes and sustainable solutions. Built with clean HTML5, CSS3, and vanilla JavaScript.
+A modern, professional corporate website for Lays Holdings showcasing their three core business divisions: **Project Management**, **Commodity Trading**, and **Energy Projects**. Built with clean HTML5, CSS3, and vanilla JavaScript.
 
-![Energy Theme](https://img.shields.io/badge/Theme-Energy-00cc66)
+![Multi-Division](https://img.shields.io/badge/Business-Multi--Division-0066cc)
 ![Responsive](https://img.shields.io/badge/Design-Responsive-0066cc)
-![Modern](https://img.shields.io/badge/Style-Modern-ffcc00)
+![Modern](https://img.shields.io/badge/Style-Corporate-1e3a8a)
 
 ## 🌟 Overview
 
-This is a complete professional redesign of the Lays Holdings website featuring a modern, corporate aesthetic with powerful energy-themed visuals and content. The design emphasizes sustainability, innovation, and technical expertise in the energy sector.
+This is a complete professional redesign of the Lays Holdings website featuring a modern, corporate holding company aesthetic. The design gives **equal prominence** to all three business divisions, showcasing the company's diversified expertise across multiple industries.
 
 ## ✨ Key Features
 
 ### Professional Design
-- **Modern Corporate Aesthetic**: Clean, professional layout suitable for an energy/holdings company
-- **Energy-Focused Color Scheme**: Electric blues, energy greens, and solar yellows
+- **Modern Corporate Aesthetic**: Clean, professional layout suitable for a diversified holding company
+- **Multi-Division Color Scheme**: 
+  - **Project Management**: Deep Blue (#1e3a8a) - Trust, stability, professionalism
+  - **Commodity Trading**: Amber/Gold (#d97706) - Wealth, trading, prosperity
+  - **Energy Projects**: Teal Green (#059669) - Energy, sustainability, innovation
+- **Equal Visual Weight**: All three divisions presented with balanced prominence
 - **Smooth Animations**: Engaging transitions and scroll effects
 - **High-Quality Typography**: Google Fonts (Poppins & Inter) for professional look
 - **Card-Based Layouts**: Modern, scannable content organization
@@ -32,42 +36,60 @@ This is a complete professional redesign of the Lays Holdings website featuring 
 ### Content Sections
 
 #### 1. Hero Section
-- Powerful headline about energy solutions
+- Powerful headline: "Lays Holdings - Driving Excellence Across Industries"
+- Subheadline highlighting three core divisions
 - Compelling call-to-action buttons
-- Animated background with energy theme
+- Professional corporate background
 - Smooth scroll indicator
 
-#### 2. About Section
-- Company overview highlighting energy expertise
-- Three key value propositions with icons
+#### 2. Three Core Divisions Section ⭐ NEW
+- **Equal prominence** for all three business divisions:
+  - **Project Management**: Professional project delivery services
+  - **Commodity Trading**: Global trading expertise
+  - **Energy Projects**: Energy sector innovation
+- Division-specific color-coded cards
+- Key features for each division
+- Individual "Learn More" links
+
+#### 3. About Section
+- Company overview emphasizing diversification
+- Three key value propositions with icons:
+  - Industry Expertise
+  - Global Reach
+  - Trusted Partnership
 - Animated statistics counter
 - Professional card design
 
-#### 3. Services Section
-- Six comprehensive energy solutions:
-  - Solar Energy Systems
-  - Wind Power Solutions
-  - Energy Storage
-  - Energy Consulting
-  - Power Systems
-  - Smart Grid Technology
+#### 4. Services Section
+- Six comprehensive services across all divisions:
+  - **Project Management**: Project Planning & Execution, Risk Management
+  - **Commodity Trading**: Commodity Sourcing & Trading, Supply Chain Solutions
+  - **Energy Projects**: Energy Project Development, Infrastructure Projects
+- Division-specific icon colors
 - Detailed service descriptions with features
 - Call-to-action links
 
-#### 4. Why Choose Us Section
-- Six key advantages with visual hierarchy
+#### 5. Why Choose Us Section
+- Six key advantages with visual hierarchy:
+  - Diversified Expertise
+  - Professional Team
+  - Proven Track Record
+  - Global Reach
+  - Partnership Approach
+  - Innovation & Excellence
 - Numbered cards with gradient accents
-- Industry leadership, expertise, and support highlights
+- Multi-sector capabilities highlighted
 
-#### 5. Contact Section
+#### 6. Contact Section
 - Professional contact form with validation
 - Complete contact information
 - Social media links
 - Business hours
 - Real-time form validation
 
-#### 6. Footer
+#### 7. Footer
 - Quick navigation links
+- **Our Divisions** section (NEW)
 - Service directory
 - Contact details
 - Social media integration
@@ -112,16 +134,41 @@ This is a complete professional redesign of the Lays Holdings website featuring 
 
 ## 🎨 Customization Guide
 
+### Company Overview
+
+Lays Holdings is a **diversified holding company** with three core business divisions:
+
+1. **Project Management Division**
+   - Professional project management services
+   - Strategic planning and execution
+   - Quality monitoring and delivery
+
+2. **Commodity Trading Division**
+   - Global commodity sourcing and trading
+   - Market analysis and intelligence
+   - Supply chain management solutions
+
+3. **Energy Projects Division**
+   - Energy project development
+   - Renewable and conventional energy solutions
+   - Infrastructure projects
+
 ### Changing Colors
 
-The color scheme is defined using CSS variables in `css/styles.css`. Update these at the top of the file:
+The color scheme is defined using CSS variables in `css/styles.css`. Each division has its own color scheme:
 
 ```css
 :root {
-    /* Primary Colors */
-    --primary-color: #0066cc;      /* Main brand color */
-    --secondary-color: #00cc66;    /* Secondary brand color */
-    --accent-color: #ffcc00;       /* Accent color */
+    /* Corporate Colors */
+    --primary-color: #0066cc;           /* Main corporate blue */
+    
+    /* Division-Specific Colors */
+    --project-color: #1e3a8a;           /* Project Management - Deep Blue */
+    --project-light: #3b82f6;           
+    --trading-color: #d97706;           /* Commodity Trading - Amber/Gold */
+    --trading-light: #fbbf24;           
+    --energy-color: #059669;            /* Energy Projects - Teal Green */
+    --energy-light: #10b981;            
     
     /* Customize as needed */
 }
@@ -144,11 +191,18 @@ Update contact details in the Contact Section and Footer:
 - Business hours
 - Social media links
 
+#### Divisions
+Modify division cards in the Three Core Divisions Section:
+- Update division descriptions and features
+- Change division icons (use Font Awesome icon classes)
+- Adjust division colors in CSS
+
 #### Services
-Modify service cards in the Services Section:
+Modify service cards in the Services Section (6 services covering all 3 divisions):
+- **2 services per division** for balance
 - Change icons (use Font Awesome icon classes)
 - Update service titles and descriptions
-- Add or remove services
+- Maintain division color coding with `service-icon-project`, `service-icon-trading`, `service-icon-energy` classes
 
 ### Typography
 
@@ -175,14 +229,27 @@ To add a custom hero background image, update the `.hero` class in `css/styles.c
 ```
 
 #### Recommended Images
-For the energy theme, consider these image types:
-- **Hero Section**: Solar panels, wind turbines, power lines, sustainable energy installations
-- **About Section**: Modern office spaces, team collaboration, technology
-- **Services**: Specific service-related imagery (solar installations, wind farms, etc.)
+For the multi-division holding company theme, consider these image types:
+- **Hero Section**: Corporate building, professional handshake, modern office, business leadership
+- **Divisions Section**: 
+  - Project Management: Planning meetings, project blueprints, construction sites
+  - Commodity Trading: Global markets, shipping/logistics, commodities
+  - Energy Projects: Solar panels, wind turbines, power infrastructure
+- **About Section**: Modern office spaces, team collaboration, global business
+- **Services**: Division-specific imagery for each service
 
 ### Form Submission
 
-The contact form currently includes client-side validation only. To make it functional:
+The contact form currently includes client-side validation only. Service options now include all three divisions:
+- Project Management
+- Risk Management
+- Commodity Trading
+- Supply Chain Solutions
+- Energy Project Development
+- Infrastructure Projects
+- Other / General Inquiry
+
+To make the form functional:
 
 1. **Backend Integration**: Set up a backend endpoint to receive form data
 2. **Update JavaScript**: Modify the form submission in `js/main.js`:
@@ -261,10 +328,11 @@ laysholdings-redesign/
 ## 🎨 Design Credits
 
 ### Color Palette
-- **Electric Blue** (#0066cc): Trust, technology, professionalism
-- **Energy Green** (#00cc66): Sustainability, growth, eco-friendly
-- **Solar Yellow** (#ffcc00): Energy, optimism, innovation
-- **Deep Navy** (#0a1929): Stability, depth, corporate
+- **Corporate Blue** (#0066cc): Trust, professionalism, stability
+- **Project Management Blue** (#1e3a8a): Deep blue representing reliability and expertise
+- **Commodity Trading Gold** (#d97706): Amber/gold representing wealth and prosperity
+- **Energy Projects Teal** (#059669): Green representing energy and sustainability
+- **Deep Navy** (#0a1929): Background, depth, corporate foundation
 
 ### Typography
 - **Headings**: Poppins (Professional, modern)
@@ -292,18 +360,19 @@ Deploy to any static hosting service:
 
 Before launching, update these items:
 
-- [ ] Company name and logo
+- [ ] Company name and logo (currently using building icon)
 - [ ] Contact information (address, phone, email)
 - [ ] Business hours
 - [ ] Social media links
-- [ ] Service descriptions
+- [ ] **Division descriptions** for all three business areas
+- [ ] **Service descriptions** (2 per division)
 - [ ] About section content
 - [ ] Statistics numbers
 - [ ] Hero section headline and subtitle
 - [ ] Form submission endpoint
 - [ ] Favicon
 - [ ] Meta descriptions
-- [ ] Images and backgrounds
+- [ ] Images and backgrounds (consider division-specific imagery)
 
 ## 🤝 Contributing
 
@@ -334,11 +403,22 @@ For questions about customization or implementation:
 - [Google Fonts](https://fonts.google.com/) - Typography options
 
 ### Design Inspiration
-- Energy company websites
-- Corporate portfolio sites
-- Modern SaaS landing pages
-- Sustainable technology platforms
+- Holding company websites
+- Multi-division corporate sites
+- Professional business portfolios
+- Diversified company presentations
+
+## 🏢 Key Features of Multi-Division Design
+
+This redesign specifically addresses the requirement to showcase **three equal business divisions**:
+
+✅ **Equal Visual Weight**: All three divisions receive identical card sizing and prominence  
+✅ **Color-Coded Distinction**: Each division has its own color scheme for easy recognition  
+✅ **Balanced Content**: Services section includes 2 services per division (6 total)  
+✅ **Dedicated Navigation**: "Our Divisions" menu item for easy access  
+✅ **Footer Integration**: Divisions listed separately from services  
+✅ **Professional Tone**: Corporate holding company aesthetic throughout  
 
 ---
 
-**Built with ⚡ for the future of energy solutions**
+**Built with 🏢 for diversified business excellence**

@@ -7,19 +7,27 @@
    CSS Variables - Energy Theme Colors
    =================================== */
 :root {
-    /* Primary Energy Colors */
-    --primary-color: #0066cc;          /* Electric Blue */
+    /* Primary Corporate Colors */
+    --primary-color: #0066cc;          /* Corporate Blue */
     --primary-dark: #004c99;           /* Deep Blue */
     --primary-light: #3399ff;          /* Bright Blue */
     
-    /* Secondary Energy Colors */
-    --secondary-color: #00cc66;        /* Energy Green */
+    /* Division-Specific Colors */
+    --project-color: #1e3a8a;          /* Project Management - Deep Blue */
+    --project-light: #3b82f6;          /* Project Blue Light */
+    --trading-color: #d97706;          /* Commodity Trading - Amber/Gold */
+    --trading-light: #fbbf24;          /* Trading Gold Light */
+    --energy-color: #059669;           /* Energy Projects - Teal Green */
+    --energy-light: #10b981;           /* Energy Green Light */
+    
+    /* Secondary Colors */
+    --secondary-color: #00cc66;        /* Green */
     --secondary-dark: #009944;         /* Forest Green */
     --secondary-light: #33ff99;        /* Bright Green */
     
     /* Accent Colors */
-    --accent-color: #ffcc00;           /* Solar Yellow */
-    --accent-orange: #ff6600;          /* Power Orange */
+    --accent-color: #ffcc00;           /* Gold */
+    --accent-orange: #ff6600;          /* Orange */
     
     /* Neutral Colors */
     --dark-bg: #0a1929;                /* Deep Navy */
@@ -425,6 +433,131 @@ button {
 }
 
 /* ===================================
+   Three Core Divisions Section
+   =================================== */
+.divisions {
+    background: var(--light-bg);
+}
+
+.divisions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.division-card {
+    background: var(--light-bg);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-normal);
+    border-top: 4px solid var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.division-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-xl);
+}
+
+/* Division-Specific Colors */
+.division-project {
+    border-top-color: var(--project-color);
+}
+
+.division-project .division-icon {
+    background: linear-gradient(135deg, var(--project-color), var(--project-light));
+}
+
+.division-trading {
+    border-top-color: var(--trading-color);
+}
+
+.division-trading .division-icon {
+    background: linear-gradient(135deg, var(--trading-color), var(--trading-light));
+}
+
+.division-energy {
+    border-top-color: var(--energy-color);
+}
+
+.division-energy .division-icon {
+    background: linear-gradient(135deg, var(--energy-color), var(--energy-light));
+}
+
+.division-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto var(--spacing-md);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--text-light);
+}
+
+.division-card h3 {
+    font-size: 1.75rem;
+    margin-bottom: var(--spacing-sm);
+    text-align: center;
+    color: var(--text-primary);
+}
+
+.division-desc {
+    color: var(--text-secondary);
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+    line-height: 1.8;
+}
+
+.division-features {
+    list-style: none;
+    margin: var(--spacing-md) 0;
+    flex-grow: 1;
+}
+
+.division-features li {
+    padding: var(--spacing-xs) 0;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+}
+
+.division-features li i {
+    color: var(--primary-color);
+    margin-right: var(--spacing-xs);
+    font-size: 0.9rem;
+}
+
+.division-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: auto;
+    transition: var(--transition-fast);
+    align-self: center;
+}
+
+.division-link:hover {
+    color: var(--primary-dark);
+    transform: translateX(5px);
+}
+
+.division-link i {
+    margin-left: var(--spacing-xs);
+    transition: var(--transition-fast);
+}
+
+.division-link:hover i {
+    transform: translateX(5px);
+}
+
+/* ===================================
    About Section
    =================================== */
 .about-grid {
@@ -538,6 +671,19 @@ button {
     font-size: 2rem;
     color: var(--text-light);
     margin-bottom: var(--spacing-md);
+}
+
+/* Division-Specific Service Icons */
+.service-icon-project {
+    background: linear-gradient(135deg, var(--project-color), var(--project-light));
+}
+
+.service-icon-trading {
+    background: linear-gradient(135deg, var(--trading-color), var(--trading-light));
+}
+
+.service-icon-energy {
+    background: linear-gradient(135deg, var(--energy-color), var(--energy-light));
 }
 
 .service-card h3 {
